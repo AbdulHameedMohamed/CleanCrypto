@@ -1,4 +1,4 @@
-package com.example.cleancrypto.ui.theme
+package com.example.cleancrypto.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

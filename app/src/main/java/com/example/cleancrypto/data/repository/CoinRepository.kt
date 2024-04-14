@@ -6,6 +6,6 @@ import com.plcoding.cryptocurrencyappyt.common.Resource
 import kotlinx.coroutines.flow.Flow
 
 interface CoinRepository {
-    suspend fun getCoins(): Flow<Resource<List<Coin>>>
-    suspend fun getCoinById(coinId: String): Flow<Resource<CoinDetail>>
+    fun getCoins(): Flow<Resource<List<Coin>>>
+    fun getCoinById(coinId: String): Flow<Resource<CoinDetail>>
 }

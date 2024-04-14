@@ -1,4 +1,4 @@
-package com.example.cleancrypto.ui.theme
+package com.example.cleancrypto.presentation.ui.theme
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors

@@ -9,7 +9,7 @@ import javax.inject.Inject
 class GetCoinUseCase @Inject constructor(
     private val repository: CoinRepository
 ) {
-    suspend operator fun invoke(coinId: String): Flow<Resource<CoinDetail>> {
+    operator fun invoke(coinId: String): Flow<Resource<CoinDetail>> {
         return repository.getCoinById(coinId)
     }
 }

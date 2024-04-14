@@ -2,6 +2,7 @@ package com.example.cleancrypto.di
 
 import com.example.cleancrypto.common.Constants
 import com.example.cleancrypto.data.remote.CoinPaprikaApi
+import com.example.cleancrypto.data.repository.CoinRepository
 import com.example.cleancrypto.data.repository.CoinRepositoryImpl
 import dagger.Module
 import dagger.Provides
@@ -28,5 +29,5 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideCoinRepository(api: CoinPaprikaApi) = CoinRepositoryImpl(api)
+    fun provideCoinRepository(api: CoinPaprikaApi): CoinRepository = CoinRepositoryImpl(api)
 }
